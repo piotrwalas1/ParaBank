@@ -35,6 +35,10 @@ public class BasicActionsTest {
         for (WebElement option : options) {
             System.out.println(option.getText());
             //pobiera text z getOptions
+
+            SelectCheck selectCheck = new SelectCheck();
+            System.out.println(selectCheck.checkOption("Audi", selectCar));
+            System.out.println(selectCheck.checkOption("jeep", selectCar));
         }
 
     }
