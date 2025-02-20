@@ -1,7 +1,4 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -23,6 +20,11 @@ public class BasicActionsTest {
         usernameImput.sendKeys("admin");
         //symulowanie nacisniecia przycisku
         usernameImput.sendKeys(Keys.TAB);
+        //właczyl sie alert i teraz obslugujemy go
+       /* Alert firstAlert =driver.switchTo().alert();
+        firstAlert.accept();
+        driver.switchTo().alert().accept();  */
+
         //klikanie checkboxa i radiobutton
         driver.findElement(By.cssSelector("[type='checkbox']")).click();
         driver.findElement(By.cssSelector("[value='male']")).click();
