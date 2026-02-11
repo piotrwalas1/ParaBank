@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class zakladanieKonta {
+public class ZakladanieKontaTest {
     @Test
    public void test11(){
         WebDriver driver = new FirefoxDriver();
